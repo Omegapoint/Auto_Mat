@@ -1,0 +1,13 @@
+on:
+  push: 
+    branches: main
+jobs:
+  build_iac:
+    runs_on: ubuntu_latest
+    steps:
+      - name: azure-login
+        uses: azure/login@v2
+        with:
+          client-id: ${{ var.CLIENTID }}
+          tenant-id: ${{ var.TENANTID }}
+          subscription-id: ${{ var.SUBSCRIPTIONID }}
