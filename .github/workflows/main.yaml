@@ -8,6 +8,6 @@ jobs:
       - name: azure-login
         uses: azure/login@v2
         with:
-          client-id: ${{ var.CLIENTID }}
-          tenant-id: ${{ var.TENANTID }}
-          subscription-id: ${{ var.SUBSCRIPTIONID }}
+          client-id: ${{ vars.CLIENTID }}
+          tenant-id: ${{ vars.TENANTID }}
+          subscription-id: ${{ vars.SUBSCRIPTIONID }}
