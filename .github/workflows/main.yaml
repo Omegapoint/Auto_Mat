@@ -2,8 +2,8 @@ on:
   push: 
     branches: main
 jobs:
-  build_iac:
-    runs_on: ubuntu_latest
+  build-iac:
+    runs-on: ubuntu_latest
     steps:
       - name: azure-login
         uses: azure/login@v2
